@@ -39,12 +39,12 @@
                 <fieldset class="subform">
                     <legend class="subform__title">itens</legend>
                     <i class="far fa-plus-square subform__plus" onclick="incluirItem()"></i>
-                    <div id="item" class="item">
-                    </div>
+                    <div id="item" class="item"> </div>
                     <div class="button-reg">
+                        <input type="color" name="cor-note" class="button-reg__color">
                         <button class="button-reg__wdom" onclick="cadastrarSemDom()">Cadastrar s/ DOM</button>
                         <button class="button-reg__clean" onclick="limparCampos()">Limpar</button>
-                        <button class="button-reg__dom" onclick="cadastrarComDom()">Cadastrar c/ DOM</button>
+                        <button class="button-reg__dom" onclick="cadastrarComDom(this)">Cadastrar c/ DOM</button>
                     </div>
                     <div class="subform__item"></div>
                 </fieldset>

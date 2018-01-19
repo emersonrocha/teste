@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Post-it</title>
+</head>
+
+<body>
+    <form class="note" id="form-note">
+        <input class="note__title" type="text" name="title" placeholder="Título" autofocus />
+        <textarea class="note__body" name="body" rows="5" placeholder="Criar uma nota..."></textarea>
+        <div class="button_note">
+            <input class="note__title" type="color" name="color" />
+            <button class="note__control" type="button" onclick="onDoneClick(this.form, this.form.nextElementSibling, this.form.title, this.form.body, this.form.color)">
+                Concluído
+            </button>
+        </div>
+    </form>
+    <section class="notes" id="list_notes"></section>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

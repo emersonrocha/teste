@@ -104,6 +104,7 @@ body{
     width: 10%;
 }
 .button-reg{
+    position: relative;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -119,6 +120,16 @@ body{
     padding: 0.3rem;
     width: 8rem;
 }
+.button-reg__color{
+    position: absolute;
+    left: 0;
+    background-color: #ffbb00;
+    border-color: #ffbb00;
+    border-radius: 5px;
+    width: 8rem;   
+    height: 32px;   
+}
+
 .board{
     display: flex;
     flex-flow: row wrap;

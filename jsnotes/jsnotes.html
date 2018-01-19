@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jsnotes.css">
+    <title>JS NOTES</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <i class="fas fa-bars navbar__menu"></i>
+            <span class="navbar__title">js notes</span>
+            <form action="" class="navbar__search">
+                <!--<span class="search-label">-->
+                <i class="fas fa-search search-label__icon"></i>
+                <!--<label for="search" class="search-label__text">pesquisar</label>-->
+                <!--</span>-->
+                <input type="text" name="search" class="search-bar" placeholder="PESQUISAR">
+            </form>
+            <span class="navbar__icons">
+                <i class="fas fa-redo"></i>
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-user"></i>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <form action="" class="form-reg">
+            <fieldset class="note-reg">
+                <legend class="note-reg__title">cadastro de notas</legend>
+                <label for="" class="note-reg__subtitle">título</label>
+                <input type="text" text="" class="note-reg__name">
+                <fieldset class="subform">
+                    <legend class="subform__title">itens</legend>
+                    <i class="far fa-plus-square subform__plus" onclick="incluirItem()"></i>
+                    <div id="item" class="item">
+                    </div>
+                    <div class="button-reg">
+                        <button class="button-reg__wdom" onclick="cadastrarSemDom()">Cadastrar s/ DOM</button>
+                        <button class="button-reg__clean" onclick="limparCampos()">Limpar</button>
+                        <button class="button-reg__dom" onclick="cadastrarComDom()">Cadastrar c/ DOM</button>
+                    </div>
+                    <div class="subform__item"></div>
+                </fieldset>
+            </fieldset>
+        </form>
+        <section class="board">
+            <!--<span class="note">
+                <h2 class="note__title">Titulo</h2>
+                <p class="note__text">auihdaiwuhdauiw</p>
+                <div class="note__icons">
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-android"></i>
+                    <i class="fab fa-chrome"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+            </span>
+            <span class="note note--even">
+                <h2 class="note__title">Titulo</h2>
+                <p class="note__text">auihdaiwuhdauiw</p>
+                <div class="note__icons">
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-android"></i>
+                    <i class="fab fa-chrome"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+            </span>-->
+        </section>
+    </main>
+</body>
+<script src="./js/jsnotes.js"></script>
+
+</html>

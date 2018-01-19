@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e8e8e8;
+}
+.navbar{
+    align-items: flex-start;
+    background-color: #ffbb00;
+    display: flex;
+    flex-flow: row wrap;
+    height: 2.1rem;
+}
+.navbar__menu{
+    margin: 0 0.5rem;
+}
+.navbar__menu,
+.navbar__title,
+.navbar__icons{
+    padding-top: 0.3rem;
+}
+.navbar__title{
+    font-weight: bold;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+}
+.navbar__search{
+    align-items: center;
+    background-color: #f5b400;
+    display: flex;
+    flex-grow: 1;
+    height: 2rem;
+    margin-right: 0.5rem;
+    width: 30%;
+}
+/*.search-label{
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+}*/
+.search-label__icon{
+    margin: 0 0.3rem;
+    width: 1rem;
+}
+/*.search-label__text{
+    text-transform: uppercase;
+}*/
+.search-bar{
+    background-color: #f5b400;
+    border-color: #f5b400;
+    border-width: 0;
+    height: 2rem;
+    width: 100%;
+}
+.navbar__icons{
+    margin-right: 0.5rem;
+}
+.form-reg{
+    margin-left: 10%;
+    margin-top: 2rem;
+    width: 80%;
+}
+.note-reg{
+    border-radius: 5px;
+}
+.note-reg__title,
+.note-reg__subtitle,
+.subform__title{
+    text-transform: uppercase;
+}
+.note-reg__subtitle,
+.note-reg__name{
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    width: 80%;
+}
+.subform{
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+.subform__plus{
+    margin: 0.3rem;
+    display: block;
+}
+.item{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+.item__title{
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    width: 15%;
+}
+.item__text{
+    margin-bottom: 0.5rem;
+    width: 75%;
+}
+.item__minus{
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    width: 10%;
+}
+.button-reg{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.button-reg__wdom,
+.button-reg__clean,
+.button-reg__dom{
+    background-color: #ffbb00;
+    border-color: #ffbb00;
+    border-radius: 5px;
+    box-shadow: 0.125rem 0.125rem #cecece;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0.3rem;
+    width: 8rem;
+}
+.board{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 2rem;
+    width: 80%;
+}
+.note{
+    background-color: #ffff8d;
+    height: 100%;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    box-shadow: -3px 3px #a39eaa;
+    width: 18rem;
+}
+.note--even{
+    background-color: #a7ffeb;
+}
+.note__text{
+    margin: 0.3rem 1rem 0.6rem 1rem;
+}
+.note__icons{
+    margin-right: 1rem;
+    float: right;
+}
+
+
+@media screen and (min-width: 540px) {
+    .button-reg__wdom{
+        order: 1;
+    }
+    .button-reg__clean{
+        order: 2;        
+    }
+}
+@media screen and (min-width: 768px) {
+    .navbar__icons{
+        margin-right: 5%;
+    }
+}

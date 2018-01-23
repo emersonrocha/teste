@@ -26,6 +26,15 @@ function updateView(section) {
 
 function onDoneClick(form, section, inputTitle, textAreaBody, color) {
     // criar uma nota    16777215 é branco
+    console.log(form, section, inputTitle, textAreaBody, color);
+    if(!inputTitle.value){
+        alert("Digite um titulo");
+        return;
+    }
+    if(!textAreaBody.value){
+        alert("Digite um conteudo!");
+        return;
+    }
     console.log(parseInt(color.value.replace("#",""),16) == Math.random() * 16777215);
     var auxCor = color.value
     if(parseInt(color.value.replace("#",""),16) == 0){

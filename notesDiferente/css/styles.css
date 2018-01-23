@@ -1,3 +1,8 @@
+body{
+    background:#666;
+  color:#fff;
+}
+
 .note {
     font-family: 'Roboto', sans-serif;
     line-height: 18px;
